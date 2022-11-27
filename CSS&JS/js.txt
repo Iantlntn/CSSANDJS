@@ -281,3 +281,5 @@ Converting NodeList to an array.
 //     final += String(Math.floor(revsint))
 // }
 // console.log(Number(final))
+
+//GINAGAWA MUE  
