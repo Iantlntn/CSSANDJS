@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS&JS PRACTICE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <meta name="Description" content="This is a Web for GRLLIS">
+    <meta name="Author" content="Gebiertas, Martin">
+    <meta name="Keywords" content="GRLLIS, Website">
+   
+    <script src="https://kit.fontawesome.com/13091db6b9.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="mainpagestyle.css">
+                 
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+     <div class="row nav-row">
+      <h1>All about CSS , JAVASCIPT</h1>
+       <ul>
+         <a class="change" id="cssid"  onclick="navlink()"><li>CSS</li></a>
+         <a class="change" id="jsid" onclick="jsnavlink()"><li>JAVASCIPT</li></a>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home-page">
+
+    <div class="container home-container">
+      <div class="row home-row">
+      
+        <div class="first-content">
+           <img src="img/me.jpg" width="100%">
+        </div>
+   
+        <div class="second-content">
+             <p>Lorem, ipsum dolor.</p>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sunt necessitatibus voluptate quos harum nostrum! Provident vitae possimus minima maiores suscipit fugit id minus hic.</p>
+            <button type="button">MY WORKS</button>
+            <button type="button">FEED BACK</button>
+        </div>
+
+      </div>
+    </div>
+
+   </section>
+
+   <section id="css-page">
+        
+       <div class="container flex-page-container">
+        <h2>CSS FLEXBOX</h2>
+        <div class="row flex-page-row">
+            <div class="box-flex box-flex-1">BOX 1</div>
+            <div class="box-flex box-flex-2">BOX 2</div>
+            <div class="box-flex box-flex-3">BOX 3</div>
+            <div class="box-flex box-flex-4">BOX 4</div> 
+            <div class="box-flex box-flex-5">BOX 5</div>
+        </div>
+       </div>
+
+       <div class="container grid-page-container">
+        <h2>CSS GRID</h2>
+        <div class="row grid-page-row">
+            <div class="box-grid box-grid-1">BOX 1</div>
+            <div class="box-grid box-grid-2">BOX 2</div>
+            <div class="box-grid box-grid-3">BOX 3</div>
+            <div class="box-grid box-grid-4">BOX 4</div> 
+            <div class="box-grid box-grid-5">BOX 5</div>
+
+        </div>
+       </div>
+
+
+     <div class="trans-container">
+      <h1>TRANSITION PROPERTY</h1>
+       <div class="trans-row">
+         <div class="box-trans box-trans-1"><h3>BOX 1</h3></div>
+         <div class="box-trans box-trans-2"><h3>TRANSLATE</h3></div>
+         <div class="box-trans box-trans-3"><h3>SCALE</h3></div>
+         <div class="box-trans box-trans-4"><h3>ROTATE</h3></div>
+         <div class="box-trans box-trans-5"><h3>SKEW</h3></div>
+       </div>
+     </div>
+
+     <div class="ani-container">
+      <h1>ANIMATION</h1>
+       <div class="ani-row">
+         <div class="box-ani box-ani-1"><h3>HOVER TO PAUSE</h3></div>
+       </div>
+     </div>
+
+
+   </section>
+
+<section id="js-page"> 
+  <div class="jscontainer">
+    <div class="jsrow">
+
+   <div class="userinput">
+    <p>ENTER YOUR NAME & LASTNAME</p>
+    <input type="text" id="inputed" required>
+    <button type="submit" onclick="press()">Press</button>
+    <p>Firstname: <span id="fname"></span></p>
+    <p>Lastname: <span id="lname"></span></p>
+  </div>
+
+  <div class="counter">
+     <label id="countnum">0</label>
+     <div class="counter-btn">
+     <button type="button" id="subbtn">	&minus; </button>
+     <button type="button" id="savebtn">SAVE</button>
+     <button type="button" id="addbtn">	&plus; </button>
+    </div>
+    <div class="save-btn-counter">
+      <button type="button" id="resetbtn"> Reset </button>
+      <p>Previous num: <span id="rcntnum"></span></p>
+      <p>Total num:<span id="totalnum"></span> </p>
+    </div>
+  </div>
+
+     <div class="rdmgenerator">
+      <label>Enter A Max Number Limit</label>
+      <input type="number" required id="rdmmax" placeholder="MAX">
+      <p>Result: <span id="resrdm"></span> <span id="resrdm1"></span> <span id="resrdm2"></span> <span id="resrdm3"></span> <span id="resrdm4"></span> <span id="resrdm5"></span> </p>
+      <button type="button" id="rdmbtn">Randomize</button>  
+     </div>
+
+     <div class="imagechange">
+      <img src="img/meme1.png" alt="image" id="imgvalue">
+    </div>
+   
+    <div class="check-container">
+      <img src="img/pochita.gif" alt="pochita" width="150px">
+      <p>POCHITA</p>
+      <div class="check-container-follow">
+       <label id="checkedfollow">Follow</label>
+       <input type="checkbox" id="checkbox">
+      </div>
+    </div>
+     
+   <div class="simple-cal-container">
+    <div class="simple-cal-row">
+       
+        <div class="cals-buttons">
+          <input type="number" id="calnum1" required> 
+          <button type="button" onclick="calbtn(this)" class="data-button">7</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">8</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">9</button>
+          <button type="button" id="cal-mul">*</button>
+           
+          <button type="button" onclick="calbtn(this)" class="data-button">4</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">5</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">6</button>
+          <button type="button" id="cal-dv">%</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">1</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">2</button>
+          <button type="button" onclick="calbtn(this)" class="data-button">3</button>
+          <button type="button" id="cal-add">+</button>
+
+          <button type="button" id="cal-clear">C</button>
+          <button type="button" onclick="calbtn(this)">0</button>
+          <button type="button" id="cal-equal">=</button>
+          <button type="button" id="cal-sub">-</button>
+        </div>
+    </div>
+   </div>
+
+   <div class="guess-container">
+    <div class="guess-row">
+        <h1>NUMBER GUESSING GAME</h1>
+        <p>Pick a # between 1 - 10</p>
+        <input type="number" id="guess-input">
+        <button type="submit" id="guess-btn">SUBMIT</button>
+        <p id="guess-result"></p>
+    </div>
+   </div>
+
+   <div class="new-container">
+    <div class="new-row">
+
+      
+
+    </div>
+   </div>
+
+
+
+   
+   </div>
+  </div>
+</section>
+
+</main>
+<footer>
+   <div class="container footer-container">
+     <div class="row footer-row">
+          
+      <div class="footer-social">
+        <ul>
+           <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+           <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+           <a href="#"><li><i class="fa-brands fa-square-instagram"></i></li></a>
+        </ul>  
+       </div>
+      <p>@2022 CopyRight: Gebiertas, Martin</p>
+
+     </div>
+   </div>
+</footer>
+<script src="prac.js"></script>
+</body>
+</html>
