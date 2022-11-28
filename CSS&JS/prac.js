@@ -216,5 +216,14 @@ document.getElementById("guess-btn").onclick = function(){
        }
 }
 
-// asdasdasdasdasd
 
+let one = ["ex", "ex1", "ex2"]
+let two = ["2", "e3", "e5 "]
+
+let merge = [one, two]
+
+for(let items of merge){
+  for(let item of items){
+     console.log(item)
+  }
+}
